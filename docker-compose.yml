@@ -9,3 +9,8 @@ services:
     #environment:
     #  MONGO_INITDB_ROOT_USERNAME: mongouser
     #  MONGO_INITDB_ROOT_PASSWORD: mongosecret
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+      - 6379:6379
