@@ -1,6 +1,6 @@
 # Bootcamp Project 6 - Rocketseat - GoNode - App Marketplace
 
-##Install Application
+## Install Application
 
 Download master branch
 
@@ -37,7 +37,7 @@ docker-compose logs -f
 
 ## APIs
 
-###Create User
+### Create User
 
 ```bash
 curl -X POST \
@@ -50,7 +50,7 @@ curl -X POST \
 }'
 ```
 
-###Create Session
+### Create Session
 
 ```bash
 curl -X POST \
@@ -62,7 +62,7 @@ curl -X POST \
 }'
 ```
 
-###Create Ad
+### Create Ad
 
 - replace **SESSION_TOKEN_HERE**
 
@@ -78,7 +78,7 @@ curl -X POST \
 }'
 ```
 
-###Create Purchase
+### Create Purchase
 
 - replace **SESSION_TOKEN_HERE** and **AD_ID_HERE**
 
