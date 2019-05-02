@@ -6,11 +6,18 @@ services:
     restart: always
     ports:
       - 27017:27017
-    #environment:
-    #  MONGO_INITDB_ROOT_USERNAME: mongouser
-    #  MONGO_INITDB_ROOT_PASSWORD: mongosecret
   redis:
     image: redis:alpine
     restart: always
     ports:
       - 6379:6379
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    command: yarn start
+    depends_on:
+      - mongo
+      - redis
+    volumes:
+      - ".:/app"
