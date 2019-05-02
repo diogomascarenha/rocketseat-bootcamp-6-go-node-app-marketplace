@@ -1,4 +1,4 @@
 module.exports = {
-  secret: 'Abc123',
-  ttl: 86400
+  secret: process.env.AUTH_SECRET,
+  ttl: process.env.AUTH_TTL
 }
