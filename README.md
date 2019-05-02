@@ -38,7 +38,7 @@ docker-compose logs -f
 (OPTIONAL) Open Mailhog
 
 
-Open Browser [http://localhost:8025]
+Open Browser [http://localhost:8025](http://localhost:8025)
 
 
 ## APIs
