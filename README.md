@@ -35,6 +35,12 @@ docker-compose up -d
 docker-compose logs -f
 ```
 
+(OPTIONAL) Open Mailhog
+
+
+Open Browser [http://localhost:8025]
+
+
 ## APIs
 
 ### Create User
